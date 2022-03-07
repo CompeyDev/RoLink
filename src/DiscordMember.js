@@ -206,7 +206,7 @@ class DiscordMember {
     if (options.message) {
       // Create the status message and save initial information.
       const statusMessage = await options.message.reply(
-        ":thought_balloon: Checking permissions...",
+        "Looking up user...",
       )
 
       // We don't want to edit the message too quickly, otherwise Discord will throttle us. T
@@ -268,7 +268,7 @@ class DiscordMember {
     if (!this.member && !(await this.prepareMember())) {
       return status({
         status: false,
-        error: ":mag: We couldn't find that user here.",
+        error: "User could not be loaded.",
         nonFatal: true,
       })
     }
@@ -277,7 +277,7 @@ class DiscordMember {
     if (this.user.bot) {
       return status({
         status: false,
-        error: ":robot: RoVer cannot verify bots.",
+        error: ":robot: Bots cannot be verified!",
       })
     }
 
@@ -286,7 +286,7 @@ class DiscordMember {
       return status({
         status: false,
         error:
-          ':octagonal_sign: RoVer cannot act on users with the "RoVer Bypass" role.',
+          'This user is whitelisted.',
         nonFatal: true,
       })
     }
@@ -298,13 +298,13 @@ class DiscordMember {
         status: false,
         error:
           this.member.guild.ownerID === this.member.id
-            ? "\n\nYou are the server owner. RoVer cannot make changes to you. This is a Discord restriction. If you want, you can change your own nickname."
-            : "\n\nRoVer can't manage this user. Please have a server admin drag RoVer's role above all other roles and ensure RoVer has permission to modify roles in order to fix this problem.",
+            ? "\n\nYou are the server owner. RoLink cannot make changes to you. This is a Discord restriction. If you want, you can change your own nickname."
+            : "\n\nRoLink can't manage this user. Please have a server admin drag RoLink's role above all other roles and ensure RoVer has permission to modify roles in order to fix this problem.",
         nonFatal: true,
       })
     }
 
-    status(":scroll: Checking the verification registry...")
+    status("Checking the verification registry...")
 
     try {
       // Read user data from memory, or request it if there isn't any cached.

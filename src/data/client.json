@@ -1,3 +1,6 @@
 {
-    "token": "Your bot token here"
+    "token": "OTQ4NTc0OTMwNTYyMzQyOTky.Yh9zPw.s3pUSLxOdgZAG5IvYPrXUGeIEAw",
+    "updateServer": {
+        "port": 3000
+    }
 }
