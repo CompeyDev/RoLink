@@ -6,9 +6,9 @@ module.exports = class NotVerifiedRoleCommand extends Command {
       name: "unverifiedrole",
       properName: "UnverifiedRole",
       aliases: [
-        "roververifiedremovedrole",
+        "rolinkverifiedremovedrole",
         "verifiedremovedrole",
-        "rovernotverifiedrole",
+        "rolinknotverifiedrole",
         "notverifiedrole",
       ],
       description:
@@ -37,7 +37,7 @@ module.exports = class NotVerifiedRoleCommand extends Command {
         return msg.reply("You are unable to use this role.")
       if (this.me.roles.highest.comparePositionTo(role) < 0)
         return msg.reply(
-          "You have attempted to bind a role above the RoVer role, please move `RoVer` up in your role list and try again.",
+          "You have attempted to bind a role above the RoLink role, please move `RoLink` up in your role list and try again.",
         )
       if (this.server.isRoleInUse(role.id)) {
         msg.reply(

@@ -14,7 +14,7 @@ module.exports = class UnverifyCommand extends Command {
   async fn(msg) {
     msg.author
       .send(
-        "To unverify, visit https://rover.link/verify and click on **Remove**.",
+        "This bot uses RoVer's registry so, to unverify, visit https://rover.link/verify and click on **Remove**.",
       )
       .then(() => {
         msg.reply("Sent you a DM with information.")

@@ -10,14 +10,14 @@ module.exports = class BindGroupCommand extends Command {
       name: "bindrank",
       properName: "BindRank",
       aliases: [
-        "roverbindgrouprank",
+        "rolinkbindgrouprank",
         "bindgroup",
         "bindgrouprank",
-        "roverbind",
+        "rolinkbind",
         "bind",
       ],
       description:
-        '`<"Discord Role"> <group_id>:<rank_id>` Binds Roblox group membership or group rank to a Discord role. Example: `!BindRank "High Rank" 372372:150,200-255` or `!BindRank "Group Member" 372372` or `!BindRank "Faction Leader" 372372:255 3723293:255 584584:250-255` or `!BindRank "DevForum Member" DevForum`. For help see https://github.com/evaera/RoVer#setting-up-roles-for-roblox-group-members-and-group-ranks',
+        '`<"Discord Role"> <group_id>:<rank_id>` Binds Roblox group membership or group rank to a Discord role. Example: `!BindRank "High Rank" 372372:150,200-255` or `!BindRank "Group Member" 372372` or `!BindRank "Faction Leader" 372372:255 3723293:255 584584:250-255` or `!BindRank "DevForum Member" DevForum`.',
 
       args: [
         {
@@ -46,7 +46,7 @@ module.exports = class BindGroupCommand extends Command {
         config.maxServerBindings
     ) {
       return msg.reply(
-        "This server has exceeded the maximum amount of allowed role bindings.\n\nTo bind an unlimited number of roles, please consider a $6 monthly donation for RoVer Plus:\n <https://rover.link/plus>.",
+        "Server is at max roles limit.",
       )
     }
 
@@ -65,7 +65,7 @@ module.exports = class BindGroupCommand extends Command {
 
     if (this.me.roles.highest.comparePositionTo(args.role) < 0)
       return msg.reply(
-        "You have attempted to bind a role above the RoVer role, please move `RoVer` up in your role list and try again.",
+        "You have attempted to bind a role above the RoLink role, please move `RoLink` up in your role list and try again.",
       )
 
     binding.role = args.role.id

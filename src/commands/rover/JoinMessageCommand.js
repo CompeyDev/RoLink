@@ -5,7 +5,7 @@ module.exports = class JoinMessageCommand extends Command {
     super(client, {
       name: "joindm",
       properName: "JoinDM",
-      aliases: ["roverjoindm"],
+      aliases: ["rolinkjoindm"],
       description:
         "`<on|off>` Set whether or not new users will be automatically direct messaged when joining this server. Default on. (This also affects whether or not users are automatically verified on joining.)",
 

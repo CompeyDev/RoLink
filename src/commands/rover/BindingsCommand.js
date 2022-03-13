@@ -7,7 +7,7 @@ module.exports = class BindingsCommand extends Command {
     super(client, {
       name: "bindings",
       properName: "Bindings",
-      aliases: ["listbindings", "roverbindings"],
+      aliases: ["listbindings", "rolinkbindings"],
       description: "Displays a list of bound roles",
     })
   }

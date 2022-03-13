@@ -6,15 +6,15 @@ module.exports = class InviteCommand extends Command {
     super(client, {
       name: "invite",
       properName: "Invite",
-      aliases: ["roverinvite"],
-      description: "Sends the user an invite link to invite RoVer.",
+      aliases: ["rolinkinvite"],
+      description: "Sends the user an invite link to invite RoLink.",
       userPermissions: [],
     })
   }
 
   async fn(msg) {
     msg.author
-      .send(`Use the following link to invite RoVer: <${config.invite}>`)
+      .send(`RoLink is a closed bot is only available to a select few.`)
       .then(() => {
         msg.reply("Sent you a DM with information.")
       })

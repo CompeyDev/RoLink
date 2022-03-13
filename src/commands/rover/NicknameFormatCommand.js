@@ -5,9 +5,9 @@ module.exports = class NicknameFormatCommand extends Command {
     super(client, {
       name: "nicknameformat",
       properName: "NicknameFormat",
-      aliases: ["rovernicknameformat"],
+      aliases: ["rolinknicknameformat"],
       description:
-        "`<format>` Set the format RoVer will use when setting users' nicknames. Available replacements can be seen at https://rover.link/manual. Default `%USERNAME%`.",
+        "`<format>` Set the format RoLink will use when setting users' nicknames. Available replacements can be seen at https://rover.link/manual. Default `%USERNAME%`.",
 
       args: [
         {

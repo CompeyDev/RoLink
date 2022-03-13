@@ -8,7 +8,7 @@ module.exports = class CreateVerifyChannelCommand extends Command {
       name: "createverifychannel",
       properName: "CreateVerifyChannel",
       aliases: [
-        "rovercreateverifychannel",
+        "rolinkcreateverifychannel",
         "createverify",
         "createverificationchannel",
         "createverification",
@@ -83,7 +83,7 @@ module.exports = class CreateVerifyChannelCommand extends Command {
           msg.guild,
         )} and follow the instructions. Then, say \`${
           msg.guild.commandPrefix
-        }verify\` in ${verifyChannel.toString()} and it will update you accordingly.`,
+        }verify\` in <#926367496586551418> and it will update you accordingly.`,
       )
 
       msg.reply(
@@ -91,7 +91,7 @@ module.exports = class CreateVerifyChannelCommand extends Command {
       )
     } catch (err) {
       msg.reply(
-        ":no_entry_sign: RoVer does not have permission to create channels in this server.",
+        ":no_entry_sign: RoLink does not have permission to create channels in this server.",
       )
     }
   }

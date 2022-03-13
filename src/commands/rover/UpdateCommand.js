@@ -54,7 +54,7 @@ module.exports = class UpdateCommand extends Command {
     super(client, {
       name: "update",
       properName: "Update",
-      aliases: ["roverupdate"],
+      aliases: ["rolinkupate"],
       description:
         "`<Discord User>` Forcibly update verification status of a user, same as them running !verify. Make sure you @mention the user.",
       throttling: { usages: 1, duration: 10 }, // 1 usage every 10 seconds
@@ -102,7 +102,7 @@ module.exports = class UpdateCommand extends Command {
       })
     } else if (!this.discordBot.isPremium()) {
       return msg.reply(
-        "Sorry, updating more than one user is only available with RoVer Plus: <https://rover.link/plus>.",
+        "Request failed. Did you try bulk updating? Due to API limitations this is not possible.",
       )
     } else {
       // They want to update a whole role (premium feature)
@@ -119,7 +119,7 @@ module.exports = class UpdateCommand extends Command {
       const limit = config.massUpdateLimit || 0
       if (affectedCount > limit) {
         return msg.reply(
-          `Sorry, but RoVer only supports updating up to ${limit} members at once. Updating this role would affect approximately ${affectedCount} members.`,
+          `Sorry, but RoLink only supports updating up to ${limit} members at once. Updating this role would affect approximately ${affectedCount} members.`,
         )
       }
 

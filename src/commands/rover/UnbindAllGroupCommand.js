@@ -6,7 +6,7 @@ module.exports = class UnbindAllGroupCommand extends Command {
       name: "unbindall",
       properName: "UnbindAll",
       aliases: [
-        "roverunbindallgroupranks",
+        "rolinkunbindallgroupranks",
         "unbindallgroupranks",
         "unbindallranks",
       ],

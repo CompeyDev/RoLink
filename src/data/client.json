@@ -1,6 +1,8 @@
 {
-    "token": "OTQ4NTc0OTMwNTYyMzQyOTky.Yh9zPw.s3pUSLxOdgZAG5IvYPrXUGeIEAw",
+    "token": "OTI2NDIxNDA1ODA4MDk5Mzc4.Yc7bKw.GCmk6fBRsTmoYVu3mR3vAbaVVNo",
     "updateServer": {
-        "port": 3000
-    }
+        "port": 3000   
+    },
+    "lockNicknames": true
+    
 }

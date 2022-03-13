@@ -5,7 +5,7 @@ module.exports = class VerifiedRoleCommand extends Command {
     super(client, {
       name: "verifiedrole",
       properName: "VerifiedRole",
-      aliases: ["roververifiedrole"],
+      aliases: ["rolinkverifiedrole"],
       description:
         "`<Discord Role>` Set the role that verified members will get. Default none",
 
@@ -32,7 +32,7 @@ module.exports = class VerifiedRoleCommand extends Command {
         return msg.reply("You are unable to use this role.")
       if (this.me.roles.highest.comparePositionTo(role) < 0)
         return msg.reply(
-          "You have attempted to bind a role above the RoVer role, please move `RoVer` up in your role list and try again.",
+          "You have attempted to bind a role above the RoLink role, please move `RoLink` up in your role list and try again.",
         )
       if (this.server.isRoleInUse(role.id)) {
         msg.reply(

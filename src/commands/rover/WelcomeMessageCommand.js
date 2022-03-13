@@ -5,9 +5,9 @@ module.exports = class WelcomeMessageCommand extends Command {
     super(client, {
       name: "welcomemessage",
       properName: "WelcomeMessage",
-      aliases: ["roverwelcomemessage"],
+      aliases: ["rolinkwelcomemessage"],
       description:
-        "`<Message>` Set the message the user gets when they join your server. This is only shown to verified members. Available replacements can be seen at https://rover.link/manual. Default: Welcome to %SERVER%, %USERNAME%!.",
+        "`<Message>` Set the message the user gets when they join your server. This is only shown to verified members. Default: Welcome to %SERVER%, %USERNAME%!.",
 
       args: [
         {

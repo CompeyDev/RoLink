@@ -6,9 +6,9 @@ module.exports = class NicknameGroupCommand extends Command {
     super(client, {
       name: "nicknamegroup",
       properName: "NicknameGroup",
-      aliases: ["rovernicknamegroup"],
+      aliases: ["rolinknicknamegroup"],
       description:
-        "`<groupid>` Set the Group RoVer will use when setting users' nicknames.",
+        "`<groupid>` Set the Group RoLink will use when setting users' nicknames.",
 
       args: [
         {

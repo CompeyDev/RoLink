@@ -6,7 +6,7 @@ module.exports = class ReverifyCommand extends Command {
     super(client, {
       name: "reverify",
       properName: "Reverify",
-      aliases: ["roverreverify"],
+      aliases: ["rolinkreverify"],
       description: "Displays instructions on how to reverify",
       userPermissions: [],
     })

@@ -23,7 +23,7 @@ module.exports = class SubscriptionCommand extends Command {
 
   async fn(msg) {
     if (!this.server.discordBot.isPremium()) {
-      return msg.reply("This command can only be used on RoVer Plus")
+      return msg.reply("Unable to run command due to API error")
     }
 
     await this.server.checkPremium()

@@ -200,7 +200,7 @@ class DiscordBot {
     )
 
     // Set status message to the default until we get info from master process
-    this.bot.user.setActivity("rover.link", { type: "LISTENING" })
+    this.bot.user.setActivity("!verify", { type: "LISTENING" })
   }
 
   /**
