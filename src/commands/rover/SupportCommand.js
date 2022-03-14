@@ -8,14 +8,14 @@ module.exports = class SupportServerCommand extends Command {
       aliases: ["server"],
       userPermissions: [],
       description:
-        "Posts an invite link to the Official RoLink Discord where you can easily get help.",
+        "haha no support xd xd",
     })
   }
 
   async fn(msg) {
     msg.author
       .send(
-        "Here's information about the bot.",
+        "ecks dee cry about it no support",
       )
       .then(() => {
         msg.reply("Sent you a DM with information.")

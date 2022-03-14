@@ -7,7 +7,7 @@ module.exports = class NicknameFormatCommand extends Command {
       properName: "NicknameFormat",
       aliases: ["rolinknicknameformat"],
       description:
-        "`<format>` Set the format RoLink will use when setting users' nicknames. Available replacements can be seen at https://rover.link/manual. Default `%USERNAME%`.",
+        "`<format>` Set the format RoLink will use when setting users' nicknames. Available replacements can be seen at https://verify.devcomp.tk/manual. Default `%USERNAME%`.",
 
       args: [
         {
