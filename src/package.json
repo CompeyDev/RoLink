@@ -11,7 +11,7 @@
     "request-debug": "^0.2.0",
     "request-promise": "^4.2.0",
     "utf-8-validate": "^5.0.2",
-    "uws": "^10.148.0",
+    "uws": "^200.0.0",
     "zlib-sync": "^0.1.7"
   },
   "name": "rover",
