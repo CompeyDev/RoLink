@@ -25,6 +25,6 @@
     "start": "node src/index.js"
   },
   "devDependencies": {
-    "prettier": "^2.4.1"
+    "prettier": "2.6.1"
   }
 }
